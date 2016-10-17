@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/idscrollViewTransport"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.bachelor.degree.travel.app.FlightActivity">
+        <LinearLayout
+            android:id="@+id/idFlightsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/flightTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="@string/flights"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/flight" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/idFlightSource"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/idFlightsTitle">
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="From airport"
+                android:ems="8" >
+                <requestFocus />
+            </AutoCompleteTextView>
+            <EditText
+                android:id="@+id/FromEditText"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content">
+            </EditText>
+            <ImageButton
+                android:id="@+id/imageButtonSource"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cropToPadding="true"
+                android:onClick="setDate"
+                android:src="@drawable/rsz_50calendar_icon" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/idFlightDest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idFlightSource">
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="To airport"
+                android:ems="8" >
+                <requestFocus />
+            </AutoCompleteTextView>
+            <EditText
+                android:id="@+id/ToEditText"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content">
+            </EditText>
+            <ImageButton
+                android:id="@+id/imageButtonDest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cropToPadding="true"
+                android:onClick="setDate"
+                android:src="@drawable/rsz_50calendar_icon" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/searchFlight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idFlightDest"
+            android:text="@string/search_flight"/>
+        <TextView
+            android:id="@+id/nearMeAirportTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Airports near me"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:textColor="@color/btn_login"
+            android:layout_below="@id/searchFlight"/>
+        <TextView
+            android:id="@+id/nearMeAiroport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nearMeAirportTitle"/>
+        <ImageView
+            android:id="@+id/airportMap"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_below="@id/nearMeAiroport"
+            android:visibility="gone"
+            android:src="@drawable/aeroporturi"/>
+    </RelativeLayout>
+</ScrollView>

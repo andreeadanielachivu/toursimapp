@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/idScrollMainDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            tools:context="com.bachelor.degree.travel.app.PlaceDetailsActivity">
+
+            <ImageView
+                android:id="@+id/arrowLeft"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:src="@drawable/left" />
+
+            <RelativeLayout
+                android:id="@+id/layoutPager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/arrowLeft">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPageAndroid"
+                    android:layout_width="250dp"
+                    android:layout_height="220dp"
+                    android:layout_centerHorizontal="true" />
+
+                <ImageView
+                    android:id="@+id/previewImg"
+                    android:layout_width="250dp"
+                    android:layout_height="220dp"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/arrowRight"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:layout_toRightOf="@id/layoutPager"
+                android:src="@drawable/right" />
+
+            <TextView
+                android:id="@+id/idDetailsPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutPager"
+                android:layout_marginTop="5dip" />
+
+            <TextView
+                android:id="@+id/idOpen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idDetailsPlace"
+                android:layout_marginBottom="5dip" />
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/table_days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idOpen"
+                android:layout_marginTop="5dip"
+                android:layout_weight="1"></TableLayout>
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/table_reviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/table_days"
+                android:layout_marginTop="10dip"
+                android:layout_weight="1"></TableLayout>
+
+            <FrameLayout
+                android:id="@+id/frameDetails"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/table_reviews"
+                android:layout_marginTop="10dip">
+
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/mapGoogleDetails"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/transparent_imageDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent" />
+            </FrameLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalViewDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/frameDetails"
+                android:layout_marginTop="5dip"
+                android:scrollbars="horizontal|vertical">
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/table_modeTravel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/frameDetails"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1"></TableLayout>
+            </HorizontalScrollView>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

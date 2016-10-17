@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView android:id="@+id/idTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Flights"/>
+
+    <ScrollView android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/idTitle"
+        android:layout_height="wrap_content">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalFlight"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleFlight"
+            android:scrollbars="horizontal|vertical"
+            android:layout_width="wrap_content">
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/table_list_flight"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/convertIata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ScrollView01"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/id_textConverter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="4"
+            android:hint="iata code"/>
+        <Button
+            android:id="@+id/convertBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convert"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/nameAirportText"
+        android:layout_below="@id/convertIata"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/Button01"
+        android:layout_below="@id/nameAirportText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_centerInParent="true"
+        android:text="Cancel" />
+</RelativeLayout>

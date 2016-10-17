@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/header_drawer"
+    android:clickable="false"
+    android:gravity="bottom"
+    android:longClickable="false"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/nav_header_username"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:singleLine="true"
+        android:textColor="@color/text_login"
+        android:text="@string/app_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/nav_header_usermail"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingTop="8dip"
+        android:textColor="@color/text_login"
+        android:text="" />
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/dashboardItem"
+            android:icon="@drawable/main_attractions_block_converted"
+            android:title="@string/dashboard" />
+        <item
+            android:id="@+id/atractionItem"
+            android:icon="@drawable/main_attractions_block_converted"
+            android:title="@string/atractions" />
+        <item
+            android:id="@+id/restaurantItem"
+            android:icon="@drawable/main_restauranticon_converted"
+            android:title="@string/restaurants" />
+        <item
+            android:id="@+id/hotelItem"
+            android:icon="@drawable/main_hotel_icon_converted"
+            android:title="@string/hotels" />
+        <item
+            android:id="@+id/transportItem"
+            android:icon="@drawable/main_trans_converted"
+            android:title="@string/transport" />
+        <item
+            android:id="@+id/nearmeItem"
+            android:icon="@drawable/main_blue_arrow_converted"
+            android:title="@string/near_me_now" />
+        <item
+            android:id="@+id/accountItem"
+            android:icon="@drawable/main_account_converted"
+            android:title="@string/details_account" />
+        <item
+            android:id="@+id/historyItem"
+            android:icon="@drawable/main_wheel_converted"
+            android:title="@string/system_info" />
+    </group>
+
+    <!--<group-->
+        <!--android:id="@+id/bottom_menu"-->
+        <!--android:checkableBehavior="none">-->
+        <!--<item-->
+            <!--android:title="Lorem Ipsum"-->
+            <!--android:id="@+id/nav_activation_code"/>-->
+
+        <!--<item-->
+            <!--android:title="Lorem Ipsum"-->
+            <!--android:id="@+id/nav_settings"/>-->
+        <!--<item-->
+            <!--android:title="Lorem Ipsum"-->
+            <!--android:id="@+id/nav_account"/>-->
+        <!--<item-->
+            <!--android:title="Lorem Ipsum"-->
+            <!--android:id="@+id/nav_about"/>-->
+
+    <!--</group>-->
+</menu>

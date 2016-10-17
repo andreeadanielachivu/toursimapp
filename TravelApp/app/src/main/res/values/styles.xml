@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="ToolbarIconColor" parent="AppTheme">
+        <item name="colorControlNormal">@color/white_54_percent_opacity</item>
+    </style>
+
+</resources>

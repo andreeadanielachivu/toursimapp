@@ -1,0 +1,160 @@
+<resources>
+    <string name="app_name">TripGuide</string>
+    <string name="facebook_app_id">1738323563052795</string>
+    <string name="create_a_new_account">Create a new account</string>
+    <string name="login">LogIn</string>
+    <string name="username">username</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="register">Register</string>
+    <string name="log_out">Log out</string>
+    <string name="welcome">Welcome</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="near_me_now">Near me now</string>
+    <string name="details_account">Account Info</string>
+    <string name="system_info">History</string>
+    <string name="atractions">Atractions</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="hotels">Hotels</string>
+    <string name="transport">Transport</string>
+    <string name="Search">search_title</string>
+    <string name="label_app">Label App</string>
+    <string name="menu_search">Searching</string>
+    <string name="search_hint">Searching</string>
+    <string name="castels">Castels</string>
+    <string name="museums">museums</string>
+    <string name="monuments">monuments</string>
+    <string name="natural_peisage">natural peisage</string>
+    <string name="monasteries">monasteries</string>
+    <string name="castel_title">Attractions</string>
+    <string name="goBtn">Go</string>
+    <string name="add_filters">Add filters</string>
+    <string name="find_castel">Find Castel</string>
+    <string name="sugestions">Sugestions</string>
+    <string name="arad">ARAD</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCSe1BL7i8TiOkbxXisEqNdIBkwfsUZl-o</string>
+    <string name="okBtnFilter">OK</string>
+    <string name="ok">OK</string>
+    <string name="flights">Flights</string>
+    <string name="search_flight">Search flight</string>
+    <string name="taxi">Taxi</string>
+    <string-array name="types_array">
+        <item>restaurant</item>
+        <item>hotel</item>
+        <item>atm</item>
+        <item>airport</item>
+        <item>cafe</item>
+        <item>park</item>
+        <item>pharmacy</item>
+        <item>museum</item>
+        <item>art_gallery</item>
+        <item>bank</item>
+        <item>bus_station</item>
+        <item>lodging</item>
+        <item>movie_rental</item>
+        <item>movie_theater</item>
+        <item>car_repair</item>
+        <item>police</item>
+        <item>hospital</item>
+        <item>church</item>
+        <item>embassy</item>
+        <item>gas_station</item>
+        <item>train_station</item>
+        <item>transit_station</item>
+        <item>taxi_stand</item>
+        <item>hindu_temple</item>
+    </string-array>
+    <string-array name="size_array">
+        <item>1 km</item>
+        <item>3 km</item>
+        <item>5 km</item>
+        <item>7 km</item>
+        <item>10 km</item>
+        <item>20 km</item>
+        <item>30 km</item>
+        <item>40 km</item>
+        <item>50 km</item>
+    </string-array>
+    <string-array name="mode_travel_array">
+        <item>driving</item>
+        <item>walking</item>
+        <item>bicycling</item>
+        <item>transit</item>
+    </string-array>
+    <string-array name="type_attraction_array">
+        <item>all</item>
+        <item>castel</item>
+        <item>museum</item>
+        <item>park</item>
+        <item>citadel</item>
+    </string-array>
+    <string-array name="category_array">
+        <item>all</item>
+        <item>attractions</item>
+        <item>restaurants</item>
+        <item>hotels</item>
+    </string-array>
+    <string-array name="area_attraction_array">
+        <item>near me</item>
+        <item>Arad</item>
+        <item>Bucuresti</item>
+        <item>Prahova</item>
+        <item>Cluj-Napoca</item>
+        <item>Timisoara</item>
+        <item>Satu Mare</item>
+        <item>other places</item>
+    </string-array>
+    <string-array name="transport_array">
+        <item>nothing</item>
+        <item>flights</item>
+        <item>taxi</item>
+    </string-array>
+    <string-array name="sourceFlight_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+    <string-array name="destFlight_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+    <string name="open_drawer">Drawer Open</string>
+    <string name="close_drawer">Drawer Close</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="msgBeforeMap">Tap on map and see sugestions below</string>
+    <string name="enter_location">Enter Location…</string>
+    <string name="choose_an_attraction_type_below">Choose an attraction type below</string>
+    <string name="tap_on_map_a_location_and_see_below_sugestions">Tap on map a location and see below sugestions</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="open">Open</string>
+    <string name="hotel">Hotel</string>
+    <string name="mode">Mode</string>
+    <string name="summary">Summary</string>
+    <string name="duration">Duration</string>
+    <string name="distance">Distance</string>
+    <string name="choose_a_transport_way_below">Choose a transport way below</string>
+    <string name="map">Map</string>
+    <string name="text">Text</string>
+    <string name="logout_text">You are logged in as %1$s using email %2$s \n Are you sure you want to log out?</string>
+    <string name="activate_backup">Activate History</string>
+    <string name="icon">Icon</string>
+    <string name="details">Details</string>
+    <string name="history">History</string>
+</resources>

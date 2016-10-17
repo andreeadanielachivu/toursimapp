@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="red">#FF0000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="bg_color">#C6E2FF</color>
+    <color name="field_color">#3F51B5</color>
+    <color name="text_color">#6699ff</color>
+    <color name="hint_color">#99bbff</color>
+    <color name="btn_login">#3377ff</color>
+    <color name="text_login">#001133</color>
+    <color name="text_logout">#4dff88</color>
+    <color name="btn_logout">#00802b</color>
+    <color name="lbl_name">#333333</color>
+    <color name="bg_fragment">#545454</color>
+    <color name="transparent">#00000000</color>
+    <color name="grayOpen">#C9C9C9</color>
+    <color name="grayDark">#8F8F8F</color>
+    <color name="primary">#ff0000ff</color>
+    <color name="primary_dark">#ff0000af</color>
+    <color name="accent">#870000ff</color>
+    <color name="toolbar_bkg">#ff0000ff</color>
+
+
+    <color name="white_87_percent_opacity">#DEFFFFFF</color>
+    <color name="white_54_percent_opacity">#8AFFFFFF</color>
+    <color name="white_100_percent_opacity">#FFffffff</color>
+    <color name="primary_text_white">#FFFFFFFF</color>
+    <color name="selected_item_menu">#2b2f33</color>
+    <color name="dialog_background">#40474d</color>
+    <color name="menu_item_expired_text">#4Dffffff</color>
+    <color name="menu_item_checked">#DEFFFFFF</color>
+    <color name="menu_item_not_selected_text">#A3ffffff</color>
+    <color name="menu_icon_checked">#FFffffff</color>
+</resources>
